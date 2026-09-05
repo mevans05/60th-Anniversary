@@ -36,24 +36,30 @@ Cost: $0. The Squarespace page is included in the existing site plan.
 
 ## Decision: link to the form, don't embed it
 
-The instinct is to iframe the Google Form into the Squarespace page. Recommend
-against it:
+**The site is on the Squarespace Business plan, so embedding is available** —
+iframes and JavaScript in Code Blocks are supported on Core, Plus, Advanced,
+Business, and both Commerce plans. This is now a free choice rather than a
+constraint.
 
-1. **Plan gating.** Iframes and JavaScript inside Squarespace Code Blocks are a
-   premium feature, available on the Core plan and above. On the Basic plan the
-   embed still *looks* fine to a logged-in admin but does not work for visitors.
-   Confirm the site's plan before relying on this.
+Recommendation is still to link out, but on narrower grounds than before:
+
+1. ~~Plan gating~~ — no longer applies. The Business plan supports it.
 2. **Mobile.** Embedded Google Forms need a fixed iframe height, which produces a
    nested scrollbar on phones. A large share of this guest list will RSVP on a
-   phone.
+   phone, and this is the most common complaint about embedded forms.
 3. **Free confirmation screen.** Linking out lets the form's own confirmation
    message handle the thank-you, with no extra page to build.
+4. **Independence.** A linked form can be edited without anyone touching the
+   business's live site.
 
 So: the Squarespace page is the invitation, and a prominent Button block sends
 people to the form.
 
-If the site *is* on Core or higher and an embed is still wanted, this goes in a
-Code Block (swap in the form's real embed URL from Send → `< >`):
+That said, the case is no longer one-sided — embedding keeps guests on
+thegreatfuldane.com the whole way, which is nicer if the page is doing real
+work as an invitation. If that matters more than the mobile friction, embed it;
+just test on an actual phone before sending. This goes in a Code Block (swap in
+the real embed URL from Send → `< >`):
 
 ```html
 <iframe src="https://docs.google.com/forms/d/e/FORM_ID/viewform?embedded=true"
@@ -100,8 +106,19 @@ Create the folder before the form, so the response sheet lands in the right plac
 └─ Day-of/                   ← seating chart, check-in list, toasts, memory book
 ```
 
-Share the folder with siblings as **Editors**, so the whole thing does not live
-in one person's account.
+**Owner:** Matt's personal Google account (`mattevans1977@gmail.com`). A personal
+Gmail account is fine here — nothing in this plan needs Workspace.
+
+The thing to fix early: right now one account holds the form, the responses, and
+the folder. If that account is ever locked out mid-planning, the RSVP list goes
+with it. Two minutes of setup avoids that:
+
+1. Share the **folder** with siblings as **Editors**.
+2. Add at least one sibling as a **collaborator on the form itself** (Form →
+   ⋮ → Add collaborators). Folder access alone does not grant form editing.
+
+Ownership can stay with Matt; this is just so nobody is a single point of
+failure eight weeks out.
 
 ### 2. Google Form
 
@@ -116,18 +133,24 @@ page, so the handoff feels continuous.
 | 2 | Email | Short answer | Yes | Updates and reminders |
 | 3 | Mobile number | Short answer | No | Day-of texts; more reliable than email here |
 | 4 | Will you be joining us? | Multiple choice | Yes | *Joyfully accept* / *Regretfully decline* |
-| 5 | How many people in your party, including yourself? | **Dropdown 1–6** | Yes | Dropdown, not free text — keeps the column numeric so it sums |
+| 5 | How many people in your party, including yourself? | **Dropdown 1–6** | Yes | Dropdown, not free text — keeps the column numeric so it sums. Raise the ceiling if households run large |
 | 6 | Names of everyone in your party | Paragraph | Yes | Needed for place cards and name tags |
 | 7 | Dietary restrictions or allergies | Paragraph | No | |
-| 8 | Meal choice | Multiple choice | If plated | Skip if buffet or family-style |
-| 9 | Song request | Short answer | No | Head start on the playlist |
-| 10 | Share a memory or message for Tom and Yvonne | Paragraph | No | See below |
+| 8 | Song request | Short answer | No | Head start on the playlist |
+| 9 | Share a memory or message for Tom and Yvonne | Paragraph | No | See below |
 
-Question 10 is the highest-value field on the form. It costs one question and
+Question 9 is the highest-value field on the form. It costs one question and
 yields a printed memory book, or three lines for the toast. Include it.
 
-Use **section branching** on Q4 so people who decline skip straight to Q10 —
-they should not have to answer meal choice to say they can't make it.
+**The meal is a buffet, so there is no meal-choice question.** That keeps the
+form to nine questions, four of them optional — short enough that people finish
+it on the first sitting.
+
+Keep the dietary question anyway: a buffet still needs allergy and vegetarian
+counts, and it is the caterer's main input from this form.
+
+Use **section branching** on Q4 so people who decline skip straight to Q9 —
+they should not have to scroll past dietary questions to say they can't make it.
 
 **Settings**
 
@@ -193,15 +216,31 @@ snapshot you can point back to.
 
 ## Open questions
 
-- What plan is thegreatfuldane.com on? Determines whether embedding is even an
-  option (Core+ required for iframes in Code Blocks).
-- Plated meal or buffet? Determines whether the meal-choice question is needed.
-- Roughly how many households are being invited? Sets the party-size dropdown
-  ceiling and whether the chase list needs to be more structured.
-- Who owns the Google account that holds the form — and are siblings added as
-  Editors on the folder?
+**Logistics — resolved**
 
----
+- ~~Site plan?~~ **Business plan** — embedding is supported, so it's a free choice.
+- ~~Plated or buffet?~~ **Buffet** — meal-choice question dropped.
+- ~~Who owns the Google account?~~ **`mattevans1977@gmail.com`** — add siblings as
+  collaborators per the Drive section above.
+
+**Still needed**
+
+- **How many households?** Sets the party-size dropdown ceiling and decides
+  whether the chase list needs more structure than a single formula column.
+- **Date, time, venue address, RSVP deadline** — the remaining placeholders.
+
+**Copy and voice** — needed before the page and form text can be written:
+
+- How do Tom and Yvonne feel about being fussed over? Determines whether this
+  reads as a tribute or as an invitation to dinner.
+- Whose voice is the invitation in — the children's, Tom and Yvonne's, or the
+  family's? Sets the grammatical person of every line.
+- One specific detail about each of them. Not adjectives — the grill nobody else
+  touches, the Thursday card game, the phrase one of them always says.
+- How do they talk to each other? Any long-running, well-worn bit?
+- How did they meet, and how does the family tell that story?
+- Dancing? Do they have a song? Decides whether the song-request field earns its
+  place.
 
 ## Alternative considered
 
