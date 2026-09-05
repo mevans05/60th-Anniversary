@@ -3,7 +3,7 @@
 A no-cost RSVP system using Google Forms + Google Drive, fronted by an unlinked
 page on thegreatfuldane.com.
 
-> Placeholders to fill in: `[PARENTS]`, `[DATE]`, `[TIME]`, `[VENUE ADDRESS]`,
+> Placeholders to fill in: `[DATE]`, `[TIME]`, `[VENUE ADDRESS]`,
 > `[RSVP DEADLINE]`, `[GUEST COUNT]`.
 
 ---
@@ -93,7 +93,7 @@ Use a password only if the guest list itself is sensitive.
 Create the folder before the form, so the response sheet lands in the right place.
 
 ```
-60th Anniversary — [PARENTS]/
+60th Anniversary — Tom and Yvonne/
 ├─ RSVPs (Responses)         ← auto-created by the form; don't rename the tab
 ├─ Guest list (master)       ← who was invited; drives the chase list
 ├─ Invitation assets/        ← photos, PDF of the paper invite, QR code
@@ -121,7 +121,7 @@ page, so the handoff feels continuous.
 | 7 | Dietary restrictions or allergies | Paragraph | No | |
 | 8 | Meal choice | Multiple choice | If plated | Skip if buffet or family-style |
 | 9 | Song request | Short answer | No | Head start on the playlist |
-| 10 | Share a memory or message for [PARENTS] | Paragraph | No | See below |
+| 10 | Share a memory or message for Tom and Yvonne | Paragraph | No | See below |
 
 Question 10 is the highest-value field on the form. It costs one question and
 yields a printed memory book, or three lines for the toast. Include it.
@@ -148,7 +148,7 @@ they should not have to answer meal choice to say they can't make it.
    `/60th-anniversary-celebration-2027`. Avoid hyphen-heavy slugs and
    ambiguous characters.
 3. Page Settings → SEO → hide from search engines.
-4. Content: photo of [PARENTS], the invitation line, [DATE] / [TIME], venue name
+4. Content: photo of Tom and Yvonne, the invitation line, [DATE] / [TIME], venue name
    and address, parking or directions notes, dress code, RSVP deadline.
 5. A **Button block**: "RSVP" → the Google Form URL → open in new window.
 6. Test in a private browser window while logged out. This is the step people

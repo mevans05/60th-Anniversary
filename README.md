@@ -1,6 +1,6 @@
 # 60th-Anniversary
 
-Planning for [PARENTS]' 60th wedding anniversary celebration at
+Planning for Tom and Yvonne's 60th wedding anniversary celebration at
 The Greatful Dane (thegreatfuldane.com).
 
 - **[RSVP-PLAN.md](RSVP-PLAN.md)** — digital RSVP system: Google Form →
