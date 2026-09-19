@@ -8,6 +8,7 @@ Source material from the family:
 
 | Detail | Status |
 |---|---|
+| Met at Turners Falls High School, MA | **Opening line** |
 | Tom calls people "ya buzzard" | Used on page |
 | Yvonne's laugh after three glasses of wine, audible five states away | Used on page |
 | Both say "son of a six and seven" when frustrated | **Used as the spine of the whole thing** |
@@ -29,15 +30,19 @@ instantly; everyone else finds it charming and moves on.
 
 **Opening**
 
-> Our parents have been married sixty years.
+> Our parents met at Turners Falls High School.
 >
-> In that time Dad has called roughly everyone he has ever met "ya buzzard," Mom's
-> laugh has been independently confirmed audible from five states away, and
-> between them they have worn "son of a six and seven" down to the nub.
+> Sixty years of marriage later, Dad still calls roughly everyone he meets "ya
+> buzzard," Mom's laugh has been independently confirmed audible from five states
+> away, and between them they have worn "son of a six and seven" down to the nub.
 >
 > They'd rather we didn't make a fuss. We're making one anyway.
 >
 > Join us for dinner at The Greatful Dane.
+
+The short first line is doing the heavy lifting. "They met at Turners Falls High
+School" earns the sixty years in five words, and it lets the second paragraph be
+funny without having to also be sentimental — the sentiment is already banked.
 
 **Details block**
 
@@ -121,9 +126,21 @@ sign-off could read *"— the children of Tommy Boy and Yvonne."*
 
 ---
 
+## Photography note
+
+The high-school detail unlocks the obvious hero image: **a yearbook or
+high-school-era photo of the two of them, paired with a recent one.** Side by
+side at the top of the page, no caption needed — the sixty years is the caption.
+
+If a yearbook photo exists, that is the single highest-value asset for this
+page, the paper invite, and the memory book. Worth a phone call to whoever has
+the family albums before anything gets designed.
+
+---
+
 ## Still open
 
 - Siblings' names for the sign-off
-- How they met, and how the family tells that story
 - Dancing? Do they have a song?
 - Date, time, venue address, dress code, RSVP deadline
+- Does a high-school-era photo exist, and who has it?
